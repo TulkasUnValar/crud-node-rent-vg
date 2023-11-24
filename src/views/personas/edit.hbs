@@ -1,0 +1,91 @@
+<div class="conatiner p-4">
+  <div class="row">
+    <div class="col-md-4 mx-auto">
+      <div class="card text-center">
+        <div class="card-header">
+          <h3 class="text-uppercase">EDITANDO UNA PERSONA</h3>
+        </div>
+        <div class="card-body">
+          <form action="/edit/{{persona.cc}}" method="post">
+            <div class="input-group mt-2">
+              <label for="cc" class="input-group-text">Identidad</label>
+              <input
+                class="form-control"
+                type="number"
+                name="cc"
+                cc="cc"
+                value="{{persona.cc}}"
+                placeholder="0"
+                required
+              />
+            </div>
+            <div class="input-group mt-2">
+              <label for="name" class="input-group-text">Nombre</label>
+              <input
+                class="form-control"
+                type="text"
+                name="name"
+                cc="name"
+                value="{{persona.name}}"
+                placeholder="Ejemplo: Luis Angel"
+                autofocus
+                required
+              />
+            </div>
+            <div class="input-group mt-2">
+              <label for="lastname" class="input-group-text">Apellido</label>
+              <input
+                class="form-control"
+                type="text"
+                name="lastname"
+                cc="lastname"
+                placeholder="Ejemplo: Fernández"
+                value="{{persona.lastname}}"
+                required
+              />
+            </div>
+            <div class="input-group mt-2">
+              <label for="age" class="input-group-text">Edad</label>
+              <input
+                class="form-control"
+                type="number"
+                name="age"
+                cc="age"
+                value="{{persona.age}}"
+                placeholder="0"
+                required
+              />
+            </div>
+            <div class="input-group mt-2">
+              <label for="phone" class="input-group-text">Teléfono</label>
+              <input
+                class="form-control"
+                type="number"
+                name="phone"
+                cc="phone"
+                value="{{persona.phone}}"
+                placeholder="0"
+                required
+              />
+            </div>
+            <div class="input-group mt-2">
+              <label for="address" class="input-group-text">Dirección</label>
+              <input
+                class="form-control"
+                type="text"
+                name="address"
+                cc="address"
+                placeholder="Ejemplo: Calle 99 # 99 - 99"
+                value="{{persona.address}}"
+                required
+              />
+            </div>
+            <div class="form-group mt-4 d-grid gap-2">
+              <button class="btn btn-success"> Actualizar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

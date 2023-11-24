@@ -1,0 +1,94 @@
+<div class="conatiner p-4">
+  <div class="row">
+    <div class="col-md-4 mx-auto">
+      <div class="card text-center">
+        <div class="card-header">
+          <h3 class="text-uppercase">EDITANDO UN VÍDEOJUEGO</h3>
+        </div>
+        <div class="card-body">
+          <form action="/editVid/{{videojuegos.cod}}" method="post">
+            <div class="input-group mt-2">
+              <label for="cod" class="input-group-text">Código</label>
+              <input
+                class="form-control"
+                type="number"
+                name="cod"
+                cod="cod"
+                value="{{videojuegos.cod}}"
+                placeholder="0"
+                autofocus
+                required
+              />
+            </div>
+            <div class="input-group mt-2">
+              <label
+                for="videogame_name"
+                class="input-group-text"
+              >Nombre</label>
+              <input
+                class="form-control"
+                type="text"
+                name="videogame_name"
+                cod="videogame_name"
+                value="{{videojuegos.videogame_name}}"
+                placeholder="Ejemplo: Super Metroid"
+                required
+              />
+            </div>
+            <div class="input-group mt-2">
+              <label for="year" class="input-group-text">Año</label>
+              <input
+                class="form-control"
+                type="number"
+                name="year"
+                cod="year"
+                placeholder="Ejemplo: 1980"
+                value="{{videojuegos.year}}"
+                required
+              />
+            </div>
+            <div class="input-group mt-2">
+              <label for="platform" class="input-group-text">Plataforma</label>
+              <input
+                class="form-control"
+                type="text"
+                name="platform"
+                cod="platform"
+                value="{{videojuegos.platform}}"
+                placeholder="0"
+                required
+              />
+            </div>
+            <div class="input-group mt-2">
+              <label for="producer" class="input-group-text">Productor</label>
+              <input
+                class="form-control"
+                type="text"
+                name="producer"
+                cod="producer"
+                value="{{videojuegos.producer}}"
+                placeholder="Nintendo"
+                required
+              />
+            </div>
+            <div class="input-group mt-2">
+              <label for="director" class="input-group-text">Director</label>
+              <input
+                class="form-control"
+                type="text"
+                name="director"
+                cod="director"
+                placeholder="Ejemplo: Yoshio Sakamoto"
+                value="{{videojuegos.director}}"
+                required
+              />
+            </div>
+            <div class="form-group mt-4 d-grid gap-2">
+              <button class="btn btn-success"> Actualizar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
